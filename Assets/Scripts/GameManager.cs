@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public GameObject instructionsUI;
     public GameObject crosshairs;
     public GameObject walkingDialogue;
+    public GameObject beaconboi;
 
     public void HowToPlay()
     {
@@ -17,6 +18,12 @@ public class GameManager : MonoBehaviour
             instructionsUI.SetActive(false);
             walkingDialogue.SetActive(true);
         }
+    }
+
+    public void RemoveBeacon()
+    {
+        Debug.Log("BEACON GONE");
+        beaconboi.SetActive(false);
     }
 
     public void CompleteGame ()
