@@ -11,6 +11,14 @@ public class GameManager : MonoBehaviour
     public GameObject beaconboi;
     public GameObject beaconDialogue;
 
+    void Update()
+    {
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
+    }
+
     public void HowToPlay()
     {
         if (Input.GetKeyDown(KeyCode.Q))

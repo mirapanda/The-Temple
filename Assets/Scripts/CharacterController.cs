@@ -18,9 +18,6 @@ public class CharacterController : MonoBehaviour
         straffe *= Time.deltaTime;
 
         transform.Translate(straffe, 0, translation);
-
-        if (Input.GetKeyDown("escape"))
-            Cursor.lockState = CursorLockMode.None;
     }
 }
 
