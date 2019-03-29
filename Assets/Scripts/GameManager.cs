@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public GameObject crosshairs;
     public GameObject walkingDialogue;
     public GameObject beaconboi;
+    public GameObject beaconDialogue;
 
     public void HowToPlay()
     {
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("BEACON GONE");
         beaconboi.SetActive(false);
+        beaconDialogue.SetActive(true);
     }
 
     public void CompleteGame ()

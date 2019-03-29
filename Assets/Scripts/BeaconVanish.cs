@@ -7,7 +7,11 @@ public class BeaconVanish : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        gameManager.RemoveBeacon();
+        if (other.name == "Player")
+        {
+            gameManager.RemoveBeacon();
+        }
+       
     }
 
 }
